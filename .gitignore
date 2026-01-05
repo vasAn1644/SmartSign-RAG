@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Data & Kaggle 
+kaggle.json
+*.zip
+Train/
+Test/
+data/raw/
+gtsrb-german-traffic-sign/
+
+# Virtual Environment
+venv/
+.env
