@@ -1,37 +1,57 @@
 #  SmartSign RAG: Multimodal Traffic Assistant
 
-A Multimodal Retrieval-Augmented Generation (RAG) application designed to help users identify and understand German traffic signs and road regulations (StVO).
+**SmartSign RAG** is a Multimodal Retrieval-Augmented Generation (RAG) application designed to help users identify and understand German traffic signs and road regulations (StVO). It combines visual and textual information with an AI assistant to provide clear, context-aware explanations.
+
+---
 
 ##  Overview
-Finding specific traffic rules can be tedious when browsing through dense legal documents. **SmartSign RAG** solves this by combining:
-- **Visual Retrieval:** High-quality traffic sign graphics.
-- **Textual Context:** Official German Road Traffic Regulations (StVO).
-- **AI Intelligence:** An LLM that explains rules based on both the retrieved image and legal text.
+
+Navigating German traffic rules can be tedious due to dense legal documents and numerous signs. SmartSign RAG simplifies this by combining:
+
+* **Visual Retrieval:** Utilization of high-quality traffic sign images.
+* **Textual Context:** Integration of scraped and structured German road regulations (StVO).
+* **AI Intelligence:** A Large Language Model (LLM) that explains rules using both image metadata and textual context.
+
+---
 
 ##  Tech Stack
-- **Framework:** LangChain
-- **Vector Database:** ChromaDB
-- **Models:** - **Vision/Text Embedding:** CLIP (OpenAI)
-  - **LLM:** Llama 3 (via Ollama or API)
-- **UI:** Streamlit
-- **Data Gathering:** BeautifulSoup (Web Scraping from *Getting Around Germany*)
+
+| Component | Technology |
+| :--- | :--- |
+| **Framework** | LangChain |
+| **Vector Database** | ChromaDB |
+| **Embeddings** | HuggingFace / MiniLM |
+| **LLM** | GPT-4o-mini (via API) |
+| **Data Gathering** | BeautifulSoup (Web Scraping) |
+| **UI** | Streamlit *(Planned)* |
+
+---
 
 ##  Project Structure
-- `data/samples_hq/`: High-quality traffic sign graphics.
-- `data/signs_description.json`: Semantic descriptions for each traffic sign class.
-- `data/raw_pdf/`: Official StVO (Road Traffic Regulations) English translation.
-- `notebooks/`: Step-by-step development (Ingestion, Indexing, RAG Chain).
 
-##  Current Status
-- [x] **Data Ingestion:** Automated web scraping for high-quality assets.
-- [x] **Knowledge Base:** Structured JSON descriptions & PDF legal documents.
-- [ ] **Multimodal Indexing:** Creating the vector store (Coming soon).
-- [ ] **Interactive UI:** Streamlit interface for querying.
+```text
+data/
+├── germany_road_signs.json      # Structured image metadata for traffic signs
+└── text_files/                  # Scraped text pages about German driving rules
+chroma_db/                       # Persisted vector store
+notebooks/                       # Development notebooks (ingestion, indexing, RAG)
+src/
+├── scraper.py                   # Web scraping images & text
+├── data_loader.py               # Loading JSON/text and converting to Documents
+├── chunker.py                   # Splitting documents into semantic chunks
+├── embeddings.py                # Embedding, vector store, and retriever logic
+└── rag_pipeline.py              # RAG chain creation and query interface
+main.py                          # CLI for scraping, indexing, and querying
 
-##  Installation
-1. Clone the repo:
-   ```bash
-   git clone [https://github.com/vasAn1644/SmartSign-RAG.git](https://github.com/vasAn1644/SmartSign-RAG.git)
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
+## Current Status
+[x] Data Ingestion: Automated web scraping for high-quality assets
+
+[x] Knowledge Base: Structured JSON descriptions & scraped text files
+
+[x] Document Chunking: Splitting data for embedding layer
+
+[x] Embedding & Vector Store: Build and persist embeddings
+
+[x] RAG Pipeline: Querying via LLM with context
+
+[ ] Interactive UI: Streamlit interface (Planned)
