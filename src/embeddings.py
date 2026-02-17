@@ -122,8 +122,8 @@ def create_vectorstore(documents):
 
 
 if __name__ == "__main__":
-    from data_loader import load_all_documents
-    from chunker import chunk_documents
+    from src.data_loader import load_all_documents
+    from src.chunker import chunk_documents
 
     print("Loading documents...")
     docs = load_all_documents()

@@ -1,0 +1,539 @@
+[
+  {
+    "id": "Q1",
+    "question": "What does the slippery road traffic sign mean in Germany?",
+    "expected_answer": "The Slippery When Wet traffic sign warns drivers of a slippery road surface, likely due to rain or other wet conditions, and indicates they should drive carefully and reduce speed.",
+    "rag_answer": "Based on the provided context, the Slippery When Wet traffic sign is a warning sign in Germany. \n\nImage: https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105\nExplanation: This sign warns drivers of a slippery road surface, likely due to rain or other wet conditions.\n\nIn Germany, this sign is used to alert drivers to potential hazards on the road, and it is part of the category of warning signs.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: Solid Broken Line. Category: Road markings in Germany.",
+        "metadata": {
+          "type": "image",
+          "category": "Road markings in Germany",
+          "image_url": "https://iamexpat.directus.app/assets/cff9e6dd-31c0-4e18-8e62-19839906ad8d?width=120&height=61",
+          "source": "iamexpat.de",
+          "title": "Solid Broken Line"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Solid Broken Line. Category: Road markings in Germany.",
+        "metadata": {
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/cff9e6dd-31c0-4e18-8e62-19839906ad8d?width=120&height=61",
+          "title": "Solid Broken Line",
+          "type": "image",
+          "category": "Road markings in Germany"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Solid Broken Line. Category: Road markings in Germany.",
+        "metadata": {
+          "category": "Road markings in Germany",
+          "image_url": "https://iamexpat.directus.app/assets/cff9e6dd-31c0-4e18-8e62-19839906ad8d?width=120&height=61",
+          "source": "iamexpat.de",
+          "type": "image",
+          "title": "Solid Broken Line"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Slippery When Wet. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "title": "Slippery When Wet",
+          "image_url": "https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105",
+          "category": "Traffic signs in Germany: Warning signs",
+          "source": "iamexpat.de",
+          "type": "image"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Slippery When Wet. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "type": "image",
+          "title": "Slippery When Wet",
+          "image_url": "https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105",
+          "category": "Traffic signs in Germany: Warning signs",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.7037037037037037,
+    "rag_quality_score": 0.852
+  },
+  {
+    "id": "Q2",
+    "question": "What is the meaning of the oil slick traffic sign?",
+    "expected_answer": "The oil slick traffic sign indicates the presence of a slippery road surface due to oil or other substances, warning drivers to exercise caution and avoid skidding.",
+    "rag_answer": "Based on the provided context, the oil slick traffic sign is a supplementary sign (Zusatzschilder). \n\nImage: https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66\nExplanation: This sign indicates the presence of an oil slick on the road, which can be hazardous for vehicles. It is likely warning drivers to exercise caution and slow down to avoid skidding or losing control of their vehicle.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "title": "Oil Slick",
+          "source": "iamexpat.de",
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "category": "Supplementary signs (Zusatzschilder)"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "title": "Oil Slick",
+          "source": "iamexpat.de",
+          "type": "image",
+          "category": "Supplementary signs (Zusatzschilder)"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "title": "Oil Slick",
+          "category": "Supplementary signs (Zusatzschilder)",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Lorries With Trailers. Category: Vehicle class symbols.",
+        "metadata": {
+          "source": "iamexpat.de",
+          "title": "Lorries With Trailers",
+          "type": "image",
+          "image_url": "https://directus.iamexpat.com/assets/1080037f-e3c2-4388-a7a6-d49117cba027?width=1024&height=286",
+          "category": "Vehicle class symbols"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Lorries With Trailers. Category: Vehicle class symbols.",
+        "metadata": {
+          "source": "iamexpat.de",
+          "category": "Vehicle class symbols",
+          "image_url": "https://directus.iamexpat.com/assets/1080037f-e3c2-4388-a7a6-d49117cba027?width=1024&height=286",
+          "type": "image",
+          "title": "Lorries With Trailers"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.7916666666666666,
+    "rag_quality_score": 0.896
+  },
+  {
+    "id": "Q3",
+    "question": "What does a triangular warning sign generally indicate in Germany?",
+    "expected_answer": "A triangular warning sign indicates a hazard on or near the road, usually depicted as a red-bordered triangle with a black pictogram describing the danger.",
+    "rag_answer": "Based on the provided context, a triangular warning sign in Germany generally indicates a hazard on or near the road. \n\nExplanation: \nWarning signs in Germany are equilateral triangles with a thick red border and white background, and they usually contain an internationally-recognised black pictogram describing the danger.",
+    "retrieved_docs": [
+      {
+        "page_content": "These are other vehicle class symbols:\n\nTraffic signs in Germany: Warning signs\n\nWarning signs give advance warning of hazards on or near the road. Warnings signs in Germany are equilateral triangles with a thick red border and white background. They usually contain an internationally-recognised black pictogram describing the danger:\n\nGerman traffic signs: Speed limit signs",
+        "metadata": {
+          "type": "text",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "These are other vehicle class symbols:\n\nTraffic signs in Germany: Warning signs\n\nWarning signs give advance warning of hazards on or near the road. Warnings signs in Germany are equilateral triangles with a thick red border and white background. They usually contain an internationally-recognised black pictogram describing the danger:\n\nGerman traffic signs: Speed limit signs",
+        "metadata": {
+          "source": "iamexpat.de",
+          "type": "text"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "These are other vehicle class symbols:\n\nTraffic signs in Germany: Warning signs\n\nWarning signs give advance warning of hazards on or near the road. Warnings signs in Germany are equilateral triangles with a thick red border and white background. They usually contain an internationally-recognised black pictogram describing the danger:\n\nGerman traffic signs: Speed limit signs",
+        "metadata": {
+          "type": "text",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Insufficient Clearance. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "title": "Insufficient Clearance",
+          "image_url": "https://iamexpat.directus.app/assets/1e0237c8-6fd3-4564-9bce-31e4fa092d3a?width=120&height=106",
+          "category": "Traffic signs in Germany: Warning signs",
+          "source": "iamexpat.de",
+          "type": "image"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Insufficient Clearance. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "category": "Traffic signs in Germany: Warning signs",
+          "title": "Insufficient Clearance",
+          "source": "iamexpat.de",
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/1e0237c8-6fd3-4564-9bce-31e4fa092d3a?width=120&height=106"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 0.0,
+    "answer_score": 0.8095238095238095,
+    "rag_quality_score": 0.405
+  },
+  {
+    "id": "Q4",
+    "question": "Where is parking on the pavement allowed?",
+    "expected_answer": "Parking on the pavement is allowed in specific situations indicated by traffic signs, such as over manhole covers, in front of curb cuts, or where sign 315 permits it for vehicles under 2.8 tons.",
+    "rag_answer": "Based on the provided context, parking on the pavement is allowed in the following situations:\n\n1. Over manhole covers and other closures, where parking on sidewalks is permitted by sign 315 or a parking space marking (Annex 2 number 74).\n2. In front of curb cuts.\n3. In areas where sign 315 indicates permission to park on sidewalks, specifically for vehicles with a permissible total weight not exceeding 2.8 tons.",
+    "retrieved_docs": [
+      {
+        "page_content": "over manhole covers and other closures, where parking on sidewalks is permitted by sign 315 or a parking \nspace marking (Annex 2 number 74),\n5. in front of curb cuts.\n(3a) Motor vehicles with a permissible total mass exceeding 7.5 t and motor vehicle trailers with a permissible total mass \nexceeding 2 t are prohibited from driving within built-up areas.\n1. in purely residential and general residential areas,\n2. in special areas designated for recreation,\n3. in spa areas and\n4. in hospital areas",
+        "metadata": {
+          "creator": "Apache FOP Version 2.6",
+          "source": "StVO.pdf",
+          "type": "pdf",
+          "producer": "Apache FOP Version 2.6",
+          "total_pages": 83,
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "page": 6,
+          "page_label": "7"
+        },
+        "source": "StVO.pdf"
+      },
+      {
+        "page_content": "(3) Parking is prohibited\n1. before and after intersections and junctions up to 5 m from the points where the edges of the carriageway meet, insofar as a \ncycle path is structurally provided to the right of the carriageway in the direction of travel, before intersections and \njunctions up to 8 m from the points where the edges of the carriageway meet,\n2.\n3.\n4.\nif it prevents the use of designated parking areas,\nin front of property entrances and exits, and on narrow roads also opposite them,",
+        "metadata": {
+          "producer": "Apache FOP Version 2.6",
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "type": "pdf",
+          "creator": "Apache FOP Version 2.6",
+          "page": 6,
+          "page_label": "7",
+          "total_pages": 83,
+          "source": "StVO.pdf"
+        },
+        "source": "StVO.pdf"
+      },
+      {
+        "page_content": "End of a\nParking management zone\n10 Character 315 Permission or prohibition\n1. Anyone driving a vehicle is prohibited from parking on \nsidewalks with vehicles whose permissible total \nweight exceeds 2.8 tons. Parking is also prohibited \ncontrary to the prescribed placement of the sign or \ncontrary to restrictions imposed by supplementary \nsigns.Parking on sidewalks\n2. a) Through\nParking permit\nThe duration may be limited according to \nvehicle type, in favor of residents with special",
+        "metadata": {
+          "page_label": "68",
+          "page": 67,
+          "creator": "Apache FOP Version 2.6",
+          "source": "StVO.pdf",
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "producer": "Apache FOP Version 2.6",
+          "type": "pdf",
+          "total_pages": 83
+        },
+        "source": "StVO.pdf"
+      },
+      {
+        "page_content": "park with a parking ticket or parking disc.\n- Page 67 of 83 -",
+        "metadata": {
+          "type": "pdf",
+          "total_pages": 83,
+          "source": "StVO.pdf",
+          "page": 66,
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "creator": "Apache FOP Version 2.6",
+          "page_label": "67",
+          "producer": "Apache FOP Version 2.6"
+        },
+        "source": "StVO.pdf"
+      },
+      {
+        "page_content": "A service of the Federal Ministry of Justice and the Federal Office for\nJustice – www.gesetze-im-internet.de\n2.\n3.\n4.\n5.\nin the area of   sharp curves,\non merging and diverging lanes, at level \ncrossings,\nin front of and within officially marked fire department access routes.\n(2) Anyone who leaves their vehicle or stops for more than three minutes is parking.\n(3) Parking is prohibited",
+        "metadata": {
+          "producer": "Apache FOP Version 2.6",
+          "page_label": "7",
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "total_pages": 83,
+          "page": 6,
+          "creator": "Apache FOP Version 2.6",
+          "source": "StVO.pdf",
+          "type": "pdf"
+        },
+        "source": "StVO.pdf"
+      }
+    ],
+    "retrieval_score": 0.5,
+    "answer_score": 0.6666666666666666,
+    "rag_quality_score": 0.583
+  },
+  {
+    "id": "Q5",
+    "question": "What category do slippery road signs belong to?",
+    "expected_answer": "Slippery road signs belong to warning signs.",
+    "rag_answer": "Based on the provided context, the category for the \"Oil Slick\" traffic sign is:\n\nSupplementary signs (Zusatzschilder)\n\nThis category is mentioned in the context for the \"Oil Slick\" sign, and it is also mentioned in the category for the other signs.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "source": "iamexpat.de",
+          "title": "Oil Slick",
+          "category": "Supplementary signs (Zusatzschilder)",
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "title": "Oil Slick",
+          "category": "Supplementary signs (Zusatzschilder)",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "title": "Oil Slick",
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "category": "Supplementary signs (Zusatzschilder)",
+          "type": "image"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: yield. Category: Right-of-way signs.",
+        "metadata": {
+          "source": "iamexpat.de",
+          "category": "Right-of-way signs",
+          "image_url": "https://iamexpat.directus.app/assets/1e57e2c6-e312-4fdb-81a9-f62745427f0a",
+          "type": "image",
+          "title": "yield"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: yield. Category: Right-of-way signs.",
+        "metadata": {
+          "type": "image",
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/1e57e2c6-e312-4fdb-81a9-f62745427f0a",
+          "title": "yield",
+          "category": "Right-of-way signs"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.16666666666666666,
+    "rag_quality_score": 0.583
+  },
+  {
+    "id": "Q6",
+    "question": "How should a driver react when seeing a slippery road sign?",
+    "expected_answer": "A driver should exercise caution, reduce speed, increase following distance, avoid sudden movements or hard braking, and be prepared for potential skidding.",
+    "rag_answer": "Based on the provided context, the relevant information is from the first three instances of the \"Slippery When Wet\" sign.\n\nSince the sign is categorized as a \"Warning sign\" (Traffic signs in Germany: Warning signs), it is likely indicating a potential hazard on the road.\n\nWhen seeing a slippery road sign, a driver should exercise caution and adjust their driving accordingly. This may include:\n\n- Reducing speed to maintain control of the vehicle\n- Increasing following distance to allow for extra stopping time\n- Avoiding sudden movements or hard braking\n- Being prepared for potential skidding or loss of traction\n\nIt is essential for drivers to be aware of their surroundings and adjust their driving behavior to match the road conditions.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: Slippery When Wet. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "source": "iamexpat.de",
+          "type": "image",
+          "title": "Slippery When Wet",
+          "category": "Traffic signs in Germany: Warning signs",
+          "image_url": "https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Slippery When Wet. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105",
+          "source": "iamexpat.de",
+          "category": "Traffic signs in Germany: Warning signs",
+          "title": "Slippery When Wet",
+          "type": "image"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Slippery When Wet. Category: Traffic signs in Germany: Warning signs.",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/f1f65762-e9f7-45ed-a274-af7a9b15d05b?width=120&height=105",
+          "title": "Slippery When Wet",
+          "category": "Traffic signs in Germany: Warning signs",
+          "type": "image",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "A service of the Federal Ministry of Justice and the Federal Office for\nJustice – www.gesetze-im-internet.de\n1 2 3\ncurrent\nNo. Sign Explanations\nUneven road surface\n8 Character 114 Risk of slipping or skidding when wet or dirty\nRisk of skidding or slipping\n9 Character 117\nCrosswind\n10 120 characters\nNarrowed roadway\n11 Character 121\nOne-sided narrowing of the roadway\n12 Character 123\nworkplace\n13 Character 124\nTraffic jam\n14 Character 125\n- Page 40 of 83 -",
+        "metadata": {
+          "producer": "Apache FOP Version 2.6",
+          "type": "pdf",
+          "creationdate": "2024-12-31T23:02:11+01:00",
+          "page_label": "40",
+          "creator": "Apache FOP Version 2.6",
+          "source": "StVO.pdf",
+          "total_pages": 83,
+          "page": 39
+        },
+        "source": "StVO.pdf"
+      },
+      {
+        "page_content": "Traffic sign: Oil Slick. Category: Supplementary signs (Zusatzschilder).",
+        "metadata": {
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/551a49e7-7fbd-46e0-9681-b89e991462c7?width=120&height=66",
+          "category": "Supplementary signs (Zusatzschilder)",
+          "title": "Oil Slick",
+          "type": "image"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.8636363636363636,
+    "rag_quality_score": 0.932
+  },
+  {
+    "id": "Q7",
+    "question": "Is the slippery road sign a regulatory or warning sign?",
+    "expected_answer": "It is a warning sign, used to alert drivers to potential hazards on the road.",
+    "rag_answer": "Unfortunately, the context provided does not include information about the \"slippery road sign.\" However, based on the category of signs provided in the context, which includes \"Regulatory signs: Signs giving orders,\" I can infer that the slippery road sign would likely be a warning sign.\n\nIn Germany, warning signs are typically used to alert drivers to potential hazards or conditions on the road, such as slippery roads. They are not regulatory signs, which give orders or instructions to drivers.\n\nTherefore, I would answer that the slippery road sign is likely a warning sign.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: Riders Prohibited. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "title": "Riders Prohibited",
+          "source": "iamexpat.de",
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/e1ba2826-7e93-4bf3-ac46-cdfdf9cd180d?width=120&height=120",
+          "category": "Regulatory signs: Signs giving orders"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Riders Prohibited. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "title": "Riders Prohibited",
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders",
+          "image_url": "https://iamexpat.directus.app/assets/e1ba2826-7e93-4bf3-ac46-cdfdf9cd180d?width=120&height=120",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Riders Prohibited. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "title": "Riders Prohibited",
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/e1ba2826-7e93-4bf3-ac46-cdfdf9cd180d?width=120&height=120",
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Pedestrians Prohibited. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "type": "image",
+          "image_url": "https://iamexpat.directus.app/assets/b1c5194c-1cf7-40e6-b310-ffdd4fc57cc1?width=120&height=120",
+          "title": "Pedestrians Prohibited",
+          "category": "Regulatory signs: Signs giving orders",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Pedestrians Prohibited. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/b1c5194c-1cf7-40e6-b310-ffdd4fc57cc1?width=120&height=120",
+          "type": "image",
+          "title": "Pedestrians Prohibited",
+          "source": "iamexpat.de",
+          "category": "Regulatory signs: Signs giving orders"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.9285714285714286,
+    "rag_quality_score": 0.964
+  },
+  {
+    "id": "Q8",
+    "question": "What legal role do traffic signs have under German traffic law?",
+    "expected_answer": "Traffic signs are legally binding instructions that regulate, warn, or guide road users, and failure to comply may result in penalties.",
+    "rag_answer": "According to the provided context, traffic signs in Germany are categorized as \"Regulatory signs: Signs giving orders\". This implies that they have a legal role in giving orders to drivers, indicating what they must or must not do.\n\nIn the context of the provided images, the signs are used to indicate specific rules, such as:\n\n- No passing vehicles over 3.5 tonnes (https://iamexpat.directus.app/assets/1ef2bce5-1b72-4c5f-be8d-cd7db1a0cabe)\n- Turn Left/Right (https://iamexpat.directus.app/assets/fbea031c-71a9-415d-9c20-92f4863db712?width=120&height=120)\n\nThese signs are used to inform drivers of specific rules and regulations, and failure to comply with these signs may result in penalties or fines.\n\nExplanation:\nTraffic signs in Germany play a crucial role in maintaining road safety and order. They provide clear instructions to drivers, helping to prevent accidents and ensure a smooth flow of traffic.",
+    "retrieved_docs": [
+      {
+        "page_content": "Traffic sign: no passing vehicles over 3,5 tonnes. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders",
+          "title": "no passing vehicles over 3,5 tonnes",
+          "image_url": "https://iamexpat.directus.app/assets/1ef2bce5-1b72-4c5f-be8d-cd7db1a0cabe",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: no passing vehicles over 3,5 tonnes. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders",
+          "image_url": "https://iamexpat.directus.app/assets/1ef2bce5-1b72-4c5f-be8d-cd7db1a0cabe",
+          "source": "iamexpat.de",
+          "title": "no passing vehicles over 3,5 tonnes"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: no passing vehicles over 3,5 tonnes. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "category": "Regulatory signs: Signs giving orders",
+          "source": "iamexpat.de",
+          "image_url": "https://iamexpat.directus.app/assets/1ef2bce5-1b72-4c5f-be8d-cd7db1a0cabe",
+          "type": "image",
+          "title": "no passing vehicles over 3,5 tonnes"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Turn Left Right. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/fbea031c-71a9-415d-9c20-92f4863db712?width=120&height=120",
+          "title": "Turn Left Right",
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders",
+          "source": "iamexpat.de"
+        },
+        "source": "iamexpat.de"
+      },
+      {
+        "page_content": "Traffic sign: Turn Left Right. Category: Regulatory signs: Signs giving orders.",
+        "metadata": {
+          "image_url": "https://iamexpat.directus.app/assets/fbea031c-71a9-415d-9c20-92f4863db712?width=120&height=120",
+          "source": "iamexpat.de",
+          "type": "image",
+          "category": "Regulatory signs: Signs giving orders",
+          "title": "Turn Left Right"
+        },
+        "source": "iamexpat.de"
+      }
+    ],
+    "retrieval_score": 1.0,
+    "answer_score": 0.7142857142857143,
+    "rag_quality_score": 0.857
+  }
+]

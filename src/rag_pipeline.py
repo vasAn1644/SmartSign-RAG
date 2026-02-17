@@ -1,66 +1,51 @@
-"""
-Responsible for:
-1) Initializing LLM for RAG
-2) Integrating retriever
-3) Preparing prompt template
-4) Running RAG queries
-"""
-
 import os
+from typing import List, Tuple, Dict, Any
 from dotenv import load_dotenv
+from operator import itemgetter
 
-from langchain_openai import ChatOpenAI
-from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from langchain_groq import ChatGroq
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough, RunnableParallel
 from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.documents import Document
 
-from .embeddings import build_retriever, load_vectorstore
+from src.embeddings import build_retriever, load_vectorstore
 
-
-DEFAULT_MODEL = "gpt-4o-mini"
-DEFAULT_API_BASE = "https://api.aimlapi.com/v1"
+DEFAULT_MODEL = "llama-3.3-70b-versatile" 
 TEMPERATURE = 0
 
 load_dotenv()
-AIML_API_KEY = os.getenv("AIML_API_KEY")
-
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 def build_llm(
     model: str = DEFAULT_MODEL,
-    api_key: str = AIML_API_KEY,
-    base_url: str = DEFAULT_API_BASE,
+    api_key: str = GROQ_API_KEY,
     temperature: float = TEMPERATURE
-) -> ChatOpenAI:
+) -> ChatGroq:
     """
-    Initialize LLM
+    Initialize Groq LLM
     """
-    # REVIEW FIX: explicit check for API key to prevent silent failure
     if not api_key:
-        raise ValueError("AIML_API_KEY not set in environment")
+        raise ValueError("GROQ_API_KEY not set in environment")
 
-    return ChatOpenAI(
+    return ChatGroq(
         model=model,
-        api_key=api_key,
-        base_url=base_url,
-        temperature=temperature
+        groq_api_key=api_key,
+        temperature=temperature,
     )
 
-
-
-# REVIEW FIX: structured multi-line prompt template for RAG, includes handling of images
 RAG_PROMPT = ChatPromptTemplate.from_template("""
 You are an expert assistant on German road rules.
 
-Use the provided context to answer the question.
-If the context contains image metadata, mention the image(s) when relevant.
+### PRIORITY RULE:
+If the context contains an "IMAGE" URL, you MUST display it using Markdown syntax:
+![Traffic Sign](image_url)
 
-If the description of a sign is incomplete, you MAY infer its meaning
-based on common traffic rules and the sign category.
-Do NOT invent specific legal details that are not implied by the context.
-
-When images are relevant, include them in your answer using this format:
-
-Image: <image_url>
-Explanation: <short explanation of the sign>
+### INSTRUCTIONS:
+- For every sign you mention, put its image right ABOVE the title.
+- Use this structure:
+  ![Sign Title](image_url)
+  **Title of the sign**
+  Rules: ...
 
 Context:
 {context}
@@ -71,78 +56,72 @@ Question:
 Answer in a clear and structured way.
 """)
 
+def format_docs(docs: List[Document]) -> Tuple[str, List[str]]:
+    """
+    Sort and format documents for RAG prompt
+    """
+    sorted_docs = sorted(
+        docs, 
+        key=lambda d: d.metadata.get("image_url") not in [None, "None", ""], 
+        reverse=True
+    )
 
-def format_docs(docs):
-    """
-    Convert list of Documents to formatted string for prompt context
-    """
-    # REVIEW FIX: extracted formatting to dedicated function for reusability & clarity
     formatted = []
-    for d in docs:
+    sources = set()
+    
+    for d in sorted_docs:
+        img = d.metadata.get("image_url") or d.metadata.get("image_path") or d.metadata.get("url") or "None"
+        
         block = f"""
-TEXT:
-{d.page_content}
-
-IMAGE_URL:
-{d.metadata.get("image_url", "None")}
-
-CATEGORY:
-{d.metadata.get("category", "Unknown")}
+[DOCUMENT START]
+IMAGE: {img}
+TEXT: {d.page_content}
+CATEGORY: {d.metadata.get('category', 'Unknown')}
+[DOCUMENT END]
 """
         formatted.append(block.strip())
+        if "source" in d.metadata:
+            sources.add(d.metadata["source"])
+            
+    return "\n\n---\n\n".join(formatted), list(sources)
 
-    return "\n\n---\n\n".join(formatted)
-
-
-def build_rag_chain(vectorstore=None, k: int = 5, llm=None):
-    """
-    Returns a composable RAG chain
-    """
-    # REVIEW FIX: lazy-loading vectorstore if not provided
+def build_rag_chain(vectorstore=None, k: int = 8, llm=None):
     if vectorstore is None:
         vectorstore = load_vectorstore()
 
-    # REVIEW FIX: lazy-building LLM if not provided
     if llm is None:
         llm = build_llm()
 
-    # REVIEW FIX: retriever wrapped with document formatter
     retriever = build_retriever(vectorstore, k=k)
 
-    rag_chain = (
-        {
-            "context": retriever | RunnableLambda(format_docs),
-            "question": RunnablePassthrough()
+    def _format_docs_step(inputs):
+        docs = inputs["docs"]
+        context, sources = format_docs(docs)
+        return {
+            "context": context,
+            "sources": sources,
+            "question": inputs["question"]
         }
-        | RAG_PROMPT
-        | llm
+
+    return (
+        RunnableParallel({"docs": retriever, "question": RunnablePassthrough()})
+        | RunnableLambda(_format_docs_step)
+        | RunnableParallel({
+            "answer": RAG_PROMPT | llm, 
+            "sources": itemgetter("sources")
+        })
     )
 
-    return rag_chain
-
-
-def run_rag_query(rag_chain, question: str):
-    """
-    Run a RAG query and return LLM response
-    """
-    # REVIEW FIX: simple wrapper for invoking chain, abstracts away retriever & prompt
-    response = rag_chain.invoke(question)
-    return response.content
-
+def run_rag_query(rag_chain, question: str) -> Dict[str, Any]:
+    result = rag_chain.invoke(question)
+    return {
+        "answer": result["answer"].content,
+        "sources": result["sources"]
+    }
 
 if __name__ == "__main__":
-    print("Loading vectorstore...")
-    # REVIEW FIX: explicit import for debug/test mode
-    from embeddings import load_vectorstore
-
     vs = load_vectorstore()
     chain = build_rag_chain(vectorstore=vs)
-
     query = "What does a slippery road traffic sign mean?"
-    print(f"Query: {query}\n")
-
     result = run_rag_query(chain, query)
-    print(result)
-
-# REVIEW FIX: debug block allows manual verification of retrieval + RAG chain
-# REVIEW FIX: separation of concerns - loading embeddings, building chain, running query
+    print(f"ANSWER:\n{result['answer']}\n\nSOURCES: {result['sources']}")

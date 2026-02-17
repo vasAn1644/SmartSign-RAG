@@ -54,4 +54,4 @@ main.py                          # CLI for scraping, indexing, and querying
 
 [x] RAG Pipeline: Querying via LLM with context
 
-[ ] Interactive UI: Streamlit interface (Planned)
+[x] Interactive UI: Streamlit interface (Planned)

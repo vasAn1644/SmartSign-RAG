@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "project": "SmartSign-RAG",
+    "version": "v1.1",
+    "description": "Evaluation dataset for RAG quality, retrieval accuracy, grounding, and trust scoring (aligned with actual RAG outputs)",
+    "created_for": "AI system evaluation"
+  },
+  "samples": [
+    {
+      "id": "Q1",
+      "question": "What does the slippery road traffic sign mean in Germany?",
+      "expected_answer": "The Slippery When Wet traffic sign warns drivers of a slippery road surface, likely due to rain or other wet conditions, and indicates they should drive carefully and reduce speed.",
+      "expected_sources": ["iamexpat.de"],
+      "category": "warning_signs",
+      "difficulty": "easy",
+      "type": "definition"
+    },
+    {
+      "id": "Q2",
+      "question": "What is the meaning of the oil slick traffic sign?",
+      "expected_answer": "The oil slick traffic sign indicates the presence of a slippery road surface due to oil or other substances, warning drivers to exercise caution and avoid skidding.",
+      "expected_sources": ["iamexpat.de"],
+      "category": "warning_signs",
+      "difficulty": "easy",
+      "type": "definition"
+    },
+    {
+      "id": "Q3",
+      "question": "What does a triangular warning sign generally indicate in Germany?",
+      "expected_answer": "A triangular warning sign indicates a hazard on or near the road, usually depicted as a red-bordered triangle with a black pictogram describing the danger.",
+      "expected_sources": ["StVO.pdf"],
+      "category": "rules",
+      "difficulty": "medium",
+      "type": "conceptual"
+    },
+    {
+      "id": "Q4",
+      "question": "Where is parking on the pavement allowed?",
+      "expected_answer": "Parking on the pavement is allowed in specific situations indicated by traffic signs, such as over manhole covers, in front of curb cuts, or where sign 315 permits it for vehicles under 2.8 tons.",
+      "expected_sources": ["StVO.pdf", "iamexpat.de"],
+      "category": "parking",
+      "difficulty": "medium",
+      "type": "rule"
+    },
+    {
+      "id": "Q5",
+      "question": "What category do slippery road signs belong to?",
+      "expected_answer": "Slippery road signs belong to warning signs.",
+      "expected_sources": ["iamexpat.de"],
+      "category": "classification",
+      "difficulty": "easy",
+      "type": "classification"
+    },
+    {
+      "id": "Q6",
+      "question": "How should a driver react when seeing a slippery road sign?",
+      "expected_answer": "A driver should exercise caution, reduce speed, increase following distance, avoid sudden movements or hard braking, and be prepared for potential skidding.",
+      "expected_sources": ["iamexpat.de", "StVO.pdf"],
+      "category": "behavior",
+      "difficulty": "medium",
+      "type": "behavior"
+    },
+    {
+      "id": "Q7",
+      "question": "Is the slippery road sign a regulatory or warning sign?",
+      "expected_answer": "It is a warning sign, used to alert drivers to potential hazards on the road.",
+      "expected_sources": ["iamexpat.de"],
+      "category": "classification",
+      "difficulty": "easy",
+      "type": "classification"
+    },
+    {
+      "id": "Q8",
+      "question": "What legal role do traffic signs have under German traffic law?",
+      "expected_answer": "Traffic signs are legally binding instructions that regulate, warn, or guide road users, and failure to comply may result in penalties.",
+      "expected_sources": ["iamexpat.de"],
+      "category": "law",
+      "difficulty": "hard",
+      "type": "legal"
+    }
+  ]
+}
