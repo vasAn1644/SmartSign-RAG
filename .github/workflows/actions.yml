@@ -2,11 +2,11 @@ name: Python App CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]  # Спрацьовує при кожному оновленні коду
+    branches: [ "main" ]
 
 jobs:
   build-and-test:
-    runs-on: ubuntu-latest  # Використовуємо хмарний Linux
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
