@@ -1,1 +1,25 @@
+name: My First Pipeline
 
+on:
+  push:
+    branches: [ "main" ]  # Запускається при кожному пуші в main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Виконується на хмарному сервері GitHub
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run a simple script
+        run: echo "Hello, if`s my first Pipeline in  GitHub Actions."
+
+      - name: Create a dummy artifact
+        run: echo "Дані для артефакту" > result.txt
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: my-artifact
+          path: result.txt
