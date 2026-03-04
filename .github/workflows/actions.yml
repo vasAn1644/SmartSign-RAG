@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run a simple script
-        run: echo "Hello, if`s my first Pipeline in  GitHub Actions."
+        run: echo "Hello, it's my first Pipeline in GitHub Actions."
 
       - name: Create a dummy artifact
         run: echo "This is a dummy artifact created by the GitHub Actions workflow." > result.txt
