@@ -17,25 +17,23 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: CI Step: Verify App Structure
+      - name: CI Step
         run: |
-          echo "Перевірка наявності головного файлу..."
+          echo "Checking app structure..."
           if [ -f "ui/app.py" ]; then
-            echo "app.py знайдено, структура проєкту коректна."
+            echo "Success: app.py found."
           else
-            echo "ПОМИЛКА: app.py не знайдено!"
+            echo "Error: app.py missing."
             exit 1
           fi
 
-      - name: CD Step: Prepare Artifacts
+      - name: CD Step
         run: |
           mkdir -p release
-          if [ -d "ui" ]; then
-            cp -r ui/* release/
-          fi
-          echo "Збірка підготовлена до деплою." > release/build_info.txt
+          [ -d "ui" ] && cp -r ui/* release/
+          echo "Build finished" > release/build_info.txt
 
-      - name: Upload Build Artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: SmartSign-Ready-to-Deploy
