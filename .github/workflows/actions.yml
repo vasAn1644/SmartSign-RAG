@@ -30,7 +30,9 @@ jobs:
       - name: CD Step: Prepare Artifacts
         run: |
           mkdir -p release
-          cp -r ui/* release/
+          if [ -d "ui" ]; then
+            cp -r ui/* release/
+          fi
           echo "Збірка підготовлена до деплою." > release/build_info.txt
 
       - name: Upload Build Artifact
